@@ -40,9 +40,9 @@ INSTALLED_APPS = [
 
 
     "apps.user.apps.UserConfig",
-    "apps.student.apps.StudentConfig",
-    "apps.teacher.apps.TeacherConfig",
     "apps.accounting.apps.AccountingConfig",
+
+    "rest_framework",
 
 ]
 
