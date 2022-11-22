@@ -1,14 +1,12 @@
 from django.contrib.auth.models import UserManager
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-import hashlib
 import uuid
-
+from datetime import datetime
 
 def user_image_rename(instance, filename):
     ext = filename.split('.')[-1]
-    name = str(hashlib.sha1(str(instance.id).encode()).hexdigest())
-    print(name)
+    name = str(datetime.now()).replace("-", "").replace(".","")
     filename = "%s.%s" % (name, ext)
     return f"user/{filename}"
 

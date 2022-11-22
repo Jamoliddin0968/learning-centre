@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     "apps.user.apps.UserConfig",
     "apps.accounting.apps.AccountingConfig",
+    'apps.course.apps.CourseConfig',
 
     "rest_framework",
 
