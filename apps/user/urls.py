@@ -1,7 +1,13 @@
 from django.urls import path
-from .views import StudentRegister, TeacherRegister, UserRegister
+from .views import (
+    StudentRegister, TeacherRegister, UserRegister,
+    UserChange,
+)
 urlpatterns = [
-    path("user_create/",UserRegister.as_view()),
-    path("student_create/",StudentRegister.as_view()),
-    path("teacher_create/",TeacherRegister.as_view()),
+    path("user/create/", UserRegister.as_view()),
+    path("student/create/", StudentRegister.as_view()),
+    path("teacher/create/", TeacherRegister.as_view()),
+    path("student/<uuid:pk>/change/", UserChange.as_view()),
+    path("user/<uuid:pk>/change/", UserChange.as_view()),
+    path("teacher/<uuid:pk>/change/", UserChange.as_view()),
 ]

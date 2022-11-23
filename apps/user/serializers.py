@@ -23,3 +23,8 @@ class TeacherSerializer(UserSerializer):
 
 class StudentSerializer(UserSerializer):
     ROLE = "STUDENT"
+
+class ChangeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("first_name","last_name","username","phone","photo")

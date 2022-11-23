@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView , RetrieveUpdateDestroyAPIView as dtView
 from .models import User
 
 
-from .serializers import UserSerializer , TeacherSerializer,StudentSerializer 
+from .serializers import UserSerializer , TeacherSerializer,StudentSerializer ,ChangeSerializer
 
 
 class UserRegister(CreateAPIView):
@@ -19,3 +19,6 @@ class StudentRegister(CreateAPIView):
 	queryset = User.objects.all()
 	serializer_class =  StudentSerializer
 
+class UserChange(dtView):
+	queryset = User.objects.all()
+	serializer_class = ChangeSerializer
