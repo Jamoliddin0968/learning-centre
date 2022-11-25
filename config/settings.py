@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     'rest_framework_simplejwt',
     'dj_database_url',
+    # 'psycopg2-binary',
 
 ]
 REST_FRAMEWORK = {
