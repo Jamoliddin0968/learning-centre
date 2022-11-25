@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv.get("SECRET_KEY",'django-insecure-p1qc!jrknes1z9^t3)r9om*e3@#xrr32q5jd@w)xw69tv6y5gb')
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+DEBUG = config('DEBUG')
 ALLOWED_HOSTS = ['simpllc.herokuapp.com','127.0.0.1']
 
 
@@ -128,11 +128,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {     
         'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST' : os.environ.get('POSTGRES_HOST', 'localhost'),
-        'NAME': os.environ.get('POSTGRES_DB', 'db_name'),
-        'USER': os.environ.get('POSTGRES_USER', 'username'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'password'),
-        'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+        'HOST' : config('Host'),
+        'NAME': config('Databse'),
+        'USER': config('User'),
+        'PASSWORD': config('Password'),
+        'PORT': config('Port'),
     }
 }
 
