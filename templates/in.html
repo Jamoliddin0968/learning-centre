@@ -1,22 +1,1027 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	{% for i in object_list %}
-	<table>
-		<tr>
-			<td>
-				{{i.username}}
-			</td>
-			<td>
-				{{i.role}}
-			</td>
-		</tr>
-	</table>
-	{% endfor %}
-</body>
+<table class="weather-table">
+                    <tr>
+                        <th class="weather-row-day">
+                            Kun
+                        </th>
+                        <th class="weather-row-day-short">
+                            Kun
+                        </th>
+                        <th colspan="2">
+                            Harorat
+                        </th>
+                        <th class="weather-row-desc">
+                            Tavsif
+                        </th>
+                        <th class="weather-row-pop">
+                            Yog'ingarchilik
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Bugun
+                            </strong>
+                            <div>
+                                24 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                PA
+                            </strong>
+                            <div>
+                                24 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +17°
+                            </span>
+                            <span class="forecast-night">
+                                +11°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Ertaga
+                            </strong>
+                            <div>
+                                25 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                JUM
+                            </strong>
+                            <div>
+                                25 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +15°
+                            </span>
+                            <span class="forecast-night">
+                                +10°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day weekend ">
+                            <strong>
+                                Shanba
+                            </strong>
+                            <div>
+                                26 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short weekend ">
+                            <strong>
+                                SHA
+                            </strong>
+                            <div>
+                                26 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +14°
+                            </span>
+                            <span class="forecast-night">
+                                +8°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day weekend ">
+                            <strong>
+                                Yakshanba
+                            </strong>
+                            <div>
+                                27 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short weekend ">
+                            <strong>
+                                YAK
+                            </strong>
+                            <div>
+                                27 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +15°
+                            </span>
+                            <span class="forecast-night">
+                                +7°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Dushanba
+                            </strong>
+                            <div>
+                                28 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                DU
+                            </strong>
+                            <div>
+                                28 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/rain.png" title="Yomg'ir"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +16°
+                            </span>
+                            <span class="forecast-night">
+                                +10°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            yomg'ir
+                        </td>
+                        <td class="weather-row-pop">
+                            96%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Seshanba
+                            </strong>
+                            <div>
+                                29 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                SE
+                            </strong>
+                            <div>
+                                29 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/rain.png" title="Yomg'ir"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +11°
+                            </span>
+                            <span class="forecast-night">
+                                +6°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            yomg'ir
+                        </td>
+                        <td class="weather-row-pop">
+                            58%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Chorshanba
+                            </strong>
+                            <div>
+                                30 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                CHOR
+                            </strong>
+                            <div>
+                                30 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/snow.png" title="Qor"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +6°
+                            </span>
+                            <span class="forecast-night">
+                                -1°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            qor
+                        </td>
+                        <td class="weather-row-pop">
+                            95%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Payshanba
+                            </strong>
+                            <div>
+                                1 dekabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                PA
+                            </strong>
+                            <div>
+                                1 dek
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +2°
+                            </span>
+                            <span class="forecast-night">
+                                -3°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!-- <!DOCTYPE doctype html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="https://obhavo.uz/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <title>
+            Toshkent shahridagi ob-havo - Obhavo.uz
+        </title>
+        <meta content="ob, havo, obhavo, kunlik, toshkent, samarqand, qarshi, buxoro, jizzax, uzbekistan, ozbekiston, oylik" name="keywords"/>
+        <meta content="Toshkent shahridagi ob-havo. O‘zbekiston shaharlaridagi aniq ob-havo ma‘lumotlari: bugun, ertaga, dam olish kunlari, bir haftalik, 14 kunlik yoki bir oylik" name="description"/>
+        <meta content="Toshkent shahridagi ob-havo - Obhavo.uz" property="og:title"/>
+        <meta content="Toshkent shahridagi ob-havo. O‘zbekiston shaharlaridagi aniq ob-havo ma‘lumotlari: bugun, ertaga, dam olish kunlari, bir haftalik, 14 kunlik yoki bir oylik" property="og:description"/>
+        <meta content="uz_UZ" property="og:locale"/>
+        <meta content="https://obhavo.uz/images/preview-logo-uz.png" property="og:image"/>
+        <link href="https://obhavo.uz/css/main.css?r5" media="all" rel="stylesheet" type="text/css">
+            <script>
+                window.yaContextCb = window.yaContextCb || []
+            </script>
+            <script async="" src="https://yandex.ru/ads/system/context.js">
+            </script>
+        </link>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="https://obhavo.uz" title="Ob-havo.uz">
+                        <img height="50" src="https://obhavo.uz/images/pogoda-logo-uz.png"/>
+                    </a>
+                </div>
+                <div class="lang">
+                    <a href="https://pogoda.uz">
+                        <i class="rus">
+                        </i>
+                        РУС
+                    </a>
+                    <span>
+                        <i class="uzb">
+                        </i>
+                        O`ZB
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="banner_top">
+            <div id="adfox_100x250_top_desktop">
+            </div>
+            <script>
+                window.yaContextCb.push(()=>{
+                    Ya.adfoxCode.create({
+                        ownerId: 239538,
+                        containerId: 'adfox_100x250_top_desktop',
+                        params: {
+                            p1: 'cvyzl',
+                            p2: 'y',
+                        }
+                    })
+                })
+            </script>
+        </div>
+        <div class="container">
+            <ul class="list-c">
+                <li>
+                    <a class="selected" href="https://obhavo.uz/tashkent">
+                        Toshkent
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/andijan">
+                        Andijon
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/bukhara">
+                        Buxoro
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/gulistan">
+                        Guliston
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/jizzakh">
+                        Jizzax
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/zarafshan">
+                        Zarafshon
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/karshi">
+                        Qarshi
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/navoi">
+                        Navoiy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/namangan">
+                        Namangan
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/nukus">
+                        Nukus
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/samarkand">
+                        Samarqand
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/termez">
+                        Termiz
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/urgench">
+                        Urganch
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/ferghana">
+                        Farg'ona
+                    </a>
+                </li>
+                <li>
+                    <a href="https://obhavo.uz/khiva">
+                        Xiva
+                    </a>
+                </li>
+            </ul>
+            <!-- banner -->
+            <div class="banner cont-block" style="background: transparent;">
+            </div>
+            <!-- current -->
+            <div class="grid-1 cont-block">
+                <div class="padd-block">
+                    <h2>
+                        Toshkent
+                    </h2>
+                    <div class="current-day">
+                        Bugun, 24 noyabr
+                    </div>
+                    <div class="current-forecast">
+                        <span>
+                            <img src="https://obhavo.uz/images/icons/cloudy.png"/>
+                        </span>
+                        <span>
+                            <strong>
+                                +17°
+                            </strong>
+                        </span>
+                        <span>
+                            +10°
+                        </span>
+                    </div>
+                    <div class="current-forecast-desc">
+                        Bulutli
+                    </div>
+                    <div class="current-forecast-details">
+                        <div class="col-1">
+                            <p>
+                                Namlik: 34%
+                            </p>
+                            <p>
+                                Shamol: Shimoli-sharqiy, 2.1 m/s
+                            </p>
+                            <p>
+                                Bosim: 763 mm sim. ust.
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Oy: Eski oy
+                            </p>
+                            <p>
+                                Quyosh chiqishi: 07:20
+                            </p>
+                            <p>
+                                Quyosh botishi: 16:58
+                            </p>
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <div class="current-forecast-day">
+                        <div class="col-1">
+                            <p class="time-of-day">
+                                Tong
+                            </p>
+                            <p class="icon" title="#">
+                                <img src="https://obhavo.uz/images/icons/clear.png"/>
+                            </p>
+                            <p class="forecast">
+                                11°
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="time-of-day">
+                                Kun
+                            </p>
+                            <p class="icon" title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png"/>
+                            </p>
+                            <p class="forecast">
+                                19°
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p class="time-of-day">
+                                Oqshom
+                            </p>
+                            <p class="icon" title="#">
+                                <img src="https://obhavo.uz/images/icons/clear.png"/>
+                            </p>
+                            <p class="forecast">
+                                13°
+                            </p>
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bot link block -->
+            <div class="grid-3 cont-block bot-block">
+                <div class="padd-block">
+                    <img alt="Telegram" class="tg-icon" src="https://obhavo.uz/images/icon-telegram.png"/>
+                    <a href="https://t.me/PogodaUzbekistanBot" target="_blank">
+                        Bizning Telegramdagi bot
+                    </a>
+                </div>
+            </div>
+            <!-- forecast 5 days -->
+            <div class="grid-2 cont-block">
+                <div class="padd-block">
+                    <h3>
+                        Haftalik ob-havo ma'lumoti
+                    </h3>
+                </div>
+                <table class="weather-table">
+                    <tr>
+                        <th class="weather-row-day">
+                            Kun
+                        </th>
+                        <th class="weather-row-day-short">
+                            Kun
+                        </th>
+                        <th colspan="2">
+                            Harorat
+                        </th>
+                        <th class="weather-row-desc">
+                            Tavsif
+                        </th>
+                        <th class="weather-row-pop">
+                            Yog'ingarchilik
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Bugun
+                            </strong>
+                            <div>
+                                24 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                PA
+                            </strong>
+                            <div>
+                                24 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +17°
+                            </span>
+                            <span class="forecast-night">
+                                +11°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Ertaga
+                            </strong>
+                            <div>
+                                25 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                JUM
+                            </strong>
+                            <div>
+                                25 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +15°
+                            </span>
+                            <span class="forecast-night">
+                                +10°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day weekend ">
+                            <strong>
+                                Shanba
+                            </strong>
+                            <div>
+                                26 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short weekend ">
+                            <strong>
+                                SHA
+                            </strong>
+                            <div>
+                                26 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +14°
+                            </span>
+                            <span class="forecast-night">
+                                +8°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day weekend ">
+                            <strong>
+                                Yakshanba
+                            </strong>
+                            <div>
+                                27 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short weekend ">
+                            <strong>
+                                YAK
+                            </strong>
+                            <div>
+                                27 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +15°
+                            </span>
+                            <span class="forecast-night">
+                                +7°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Dushanba
+                            </strong>
+                            <div>
+                                28 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                DU
+                            </strong>
+                            <div>
+                                28 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/rain.png" title="Yomg'ir"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +16°
+                            </span>
+                            <span class="forecast-night">
+                                +10°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            yomg'ir
+                        </td>
+                        <td class="weather-row-pop">
+                            96%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Seshanba
+                            </strong>
+                            <div>
+                                29 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                SE
+                            </strong>
+                            <div>
+                                29 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/rain.png" title="Yomg'ir"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +11°
+                            </span>
+                            <span class="forecast-night">
+                                +6°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            yomg'ir
+                        </td>
+                        <td class="weather-row-pop">
+                            58%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Chorshanba
+                            </strong>
+                            <div>
+                                30 noyabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                CHOR
+                            </strong>
+                            <div>
+                                30 noya
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/snow.png" title="Qor"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +6°
+                            </span>
+                            <span class="forecast-night">
+                                -1°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            qor
+                        </td>
+                        <td class="weather-row-pop">
+                            95%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="weather-row-day ">
+                            <strong>
+                                Payshanba
+                            </strong>
+                            <div>
+                                1 dekabr
+                            </div>
+                        </td>
+                        <td class="weather-row-day-short ">
+                            <strong>
+                                PA
+                            </strong>
+                            <div>
+                                1 dek
+                            </div>
+                        </td>
+                        <td class="weather-row-forecast-icon">
+                            <span title="#">
+                                <img src="https://obhavo.uz/images/icons/cloudy.png" title="Bulutli"/>
+                            </span>
+                        </td>
+                        <td class="weather-row-forecast">
+                            <span class="forecast-day">
+                                +2°
+                            </span>
+                            <span class="forecast-night">
+                                -3°
+                            </span>
+                        </td>
+                        <td class="weather-row-desc">
+                            bulutli
+                        </td>
+                        <td class="weather-row-pop">
+                            0%
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- news block -->
+            <div class="grid-3 cont-block">
+                <div class="padd-block">
+                    <h3>
+                        Yangiliklar
+                    </h3>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/ambassadors/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                O‘zbekiston prezidenti yangi tayinlangan elchilarni qabul qildi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 16:27
+                        </span>
+                    </div>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/kyrgiz/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                Shavkat Mirziyoyev dekabrda Qirg‘izistonga boradi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 16:06
+                        </span>
+                    </div>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/drivers/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                Eslatma: 1-dekabrdan haydovchilar qoidabuzarligi uchun jarima ballarini hisoblash boshlanadi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 15:19
+                        </span>
+                    </div>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/surkhandar/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                Surxondaryoda 1 gektar yerni $100 ming evaziga sotishda gumonlangan shaxs ushlandi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 14:50
+                        </span>
+                    </div>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/angren/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                Angren hokimi Alisher Raimovga «hayfsan» berildi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 14:50
+                        </span>
+                    </div>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/oripov/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                AQShda o‘zbek shoiri Abdulla Oripov haqida film suratga olinmoqda
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 14:37
+                        </span>
+                    </div>
+                    <div class="news-item ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/andijan/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                Andijonda elektr o‘chgan vaqtda reanimatsiyadagi bemor vafot etdi. Energetika vazirligi buni rad etib chiqdi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 13:49
+                        </span>
+                    </div>
+                    <div class="news-item last ">
+                        <span class="news-title">
+                            <a href="https://www.gazeta.uz/oz/2022/11/24/auto/?utm_source=obhavo&utm_medium=news" target="_blank">
+                                Oktabr oyida avtomobil bozorida pasayish kuzatildi
+                            </a>
+                        </span>
+                        <span class="news-date">
+                            Bugun, 13:05
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="footer">
+                <p>
+                    <a href="/page/adv/">
+                        Reklama joylashtirish
+                    </a>
+                    <i>
+                        |
+                    </i>
+                    Malumotlar
+                    <a href="https://openweathermap.org/" target="_blank">
+                        OpenWeather
+                    </a>
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
+ --> -->
