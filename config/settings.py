@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p1qc!jrknes1z9^t3)r9om*e3@#xrr32q5jd@w)xw69tv6y5gb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
-ALLOWED_HOSTS = ['simpllc.herokuapp.com','127.0.0.1']
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 
@@ -47,15 +47,14 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     'rest_framework_simplejwt',
-    'dj_database_url',
-    # 'psycopg2-binary',
+    'psycopg2',
 
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
-}
+}   
 AUTH_USER_MODEL = "user.User"
 from datetime import timedelta
 SIMPLE_JWT = {
@@ -93,7 +92,6 @@ SIMPLE_JWT = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -126,17 +124,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {     
-        'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST' : config('Host'),
-        'NAME': config('Database'),
-        'USER': config('User'),
-        'PASSWORD': config('Password'),
-        'PORT': config('Port'),
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
