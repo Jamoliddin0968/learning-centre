@@ -7,7 +7,7 @@ djangorestframework-simplejwt
 
 Pillow
 PyJWT
-
+drf-yasg
 pytz
 sqlparse
 tzdata
